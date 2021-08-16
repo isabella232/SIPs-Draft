@@ -398,11 +398,12 @@ export type MarkdownRemarkGatsbyPathArgs = {
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
   sccp?: Maybe<Scalars['Int']>;
+  author?: Maybe<Scalars['String']>;
   status?: Maybe<Scalars['String']>;
   discussions_to?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
   created?: Maybe<Scalars['Date']>;
   sip?: Maybe<Scalars['Int']>;
+  implementor?: Maybe<Scalars['String']>;
   updated?: Maybe<Scalars['Date']>;
 };
 
@@ -847,11 +848,12 @@ export type MarkdownRemarkFilterInput = {
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   sccp?: Maybe<IntQueryOperatorInput>;
+  author?: Maybe<StringQueryOperatorInput>;
   status?: Maybe<StringQueryOperatorInput>;
   discussions_to?: Maybe<StringQueryOperatorInput>;
-  author?: Maybe<StringQueryOperatorInput>;
   created?: Maybe<DateQueryOperatorInput>;
   sip?: Maybe<IntQueryOperatorInput>;
+  implementor?: Maybe<StringQueryOperatorInput>;
   updated?: Maybe<DateQueryOperatorInput>;
 };
 
@@ -1003,11 +1005,12 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
   | 'childrenMarkdownRemark___frontmatter___sccp'
+  | 'childrenMarkdownRemark___frontmatter___author'
   | 'childrenMarkdownRemark___frontmatter___status'
   | 'childrenMarkdownRemark___frontmatter___discussions_to'
-  | 'childrenMarkdownRemark___frontmatter___author'
   | 'childrenMarkdownRemark___frontmatter___created'
   | 'childrenMarkdownRemark___frontmatter___sip'
+  | 'childrenMarkdownRemark___frontmatter___implementor'
   | 'childrenMarkdownRemark___frontmatter___updated'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
@@ -1065,11 +1068,12 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
   | 'childMarkdownRemark___frontmatter___sccp'
+  | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___status'
   | 'childMarkdownRemark___frontmatter___discussions_to'
-  | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___created'
   | 'childMarkdownRemark___frontmatter___sip'
+  | 'childMarkdownRemark___frontmatter___implementor'
   | 'childMarkdownRemark___frontmatter___updated'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
@@ -2250,11 +2254,12 @@ export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
   | 'frontmatter___sccp'
+  | 'frontmatter___author'
   | 'frontmatter___status'
   | 'frontmatter___discussions_to'
-  | 'frontmatter___author'
   | 'frontmatter___created'
   | 'frontmatter___sip'
+  | 'frontmatter___implementor'
   | 'frontmatter___updated'
   | 'excerpt'
   | 'rawMarkdownBody'
